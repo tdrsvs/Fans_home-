@@ -253,6 +253,8 @@
     <i class="fa fa-edit icon" onclick="window.location.href='https://fanshome0.github.io/Favorite-/';" title=""></i>
   
    <i class="fa fa-newspaper icon" onclick="window.location.href='https://fanshome0.github.io/Cartoon-news-/';" title=""></i>
+   
+   
     <i class="fa fa-heart icon" id="showFavorites" title=""></i>
 
  
@@ -355,7 +357,7 @@
         <div class="notification-popup" id="notification-popup">
             <div class="notification-item">
                 <p id="notification-title">
-                  تمت إضافة كرتونات جديدة إلى ديار المعجبين لتستمتعوا بمشاهدة أحدث العروض. كما أضفنا قسم حلقات يومية لتتمكنوا من متابعة أجدد حلقات الكرتون، بالإضافة إلى قسم كرتونات قادمة قريبًا لتكونوا على اطلاع مسبق بالعروض المنتظرة
+           تمت إضافة ميزة جديدة وهيَ البحث عن الكرتون إذا لم تجد الكرتون في الصفحة الرئيسية، يمكنك بكل سهولة استخدام قسم البحث الجديد للعثور عليه. هذه الميزة تجعل الوصول إلى أي كرتون أسرع وأسهل
 </p>
                 <button onclick="markAsRead()">تعيين كمقروءة</button>
             </div>
@@ -398,14 +400,14 @@
 
         // Function to check if there are new notifications
         function hasNewNotifications() {
-            const currentNotificationTitle = 'تمت إضافة كرتونات جديدة إلى ديار المعجبين لتستمتعوا بمشاهدة أحدث العروض. كما أضفنا قسم حلقات يومية لتتمكنوا من متابعة أجدد حلقات الكرتون، بالإضافة إلى قسم كرتونات قادمة قريبًا لتكونوا على اطلاع مسبق بالعروض المنتظرة'; // Replace with actual logic
+            const currentNotificationTitle = 'تمت إضافة ميزة جديدة وهيَ البحث عن الكرتون إذا لم تجد الكرتون في الصفحة الرئيسية، يمكنك بكل سهولة استخدام قسم البحث الجديد للعثور عليه. هذه الميزة تجعل الوصول إلى أي كرتون أسرع وأسهل'; // Replace with actual logic
             const storedNotificationTitle = localStorage.getItem(notificationTitleKey);
             return !storedNotificationTitle || storedNotificationTitle !== currentNotificationTitle;
         }
 
         // Initialize the badge display based on the presence of new notifications
         document.addEventListener('DOMContentLoaded', () => {
-            const currentNotificationTitle = 'تمت إضافة كرتونات جديدة إلى ديار المعجبين لتستمتعوا بمشاهدة أحدث العروض. كما أضفنا قسم حلقات يومية لتتمكنوا من متابعة أجدد حلقات الكرتون، بالإضافة إلى قسم كرتونات قادمة قريبًا لتكونوا على اطلاع مسبق بالعروض المنتظرة'; // Replace with actual logic
+            const currentNotificationTitle = 'تمت إضافة ميزة جديدة وهيَ البحث عن الكرتون إذا لم تجد الكرتون في الصفحة الرئيسية، يمكنك بكل سهولة استخدام قسم البحث الجديد للعثور عليه. هذه الميزة تجعل الوصول إلى أي كرتون أسرع وأسهل'; // Replace with actual logic
             if (hasNewNotifications()) {
                 notificationBadge.style.display = 'block';
             }
@@ -416,6 +418,7 @@
 </html>
 
  
+  <i class="fa fa-search icon" onclick="window.location.href='https://tdrsvs.github.io/Search-in-Fans-home-/';" title=""></i>
  
 
 </div>
@@ -513,23 +516,7 @@
                
                               
 
-               
-                   <div class="movie-item" data-story="يقضي الشقيقان التوأم ديبر ومابل باينز الصيف في منتجع سياحي يملكه عمهما الأكبر في منطقة جرافيتي فولز الغامضة في ولاية أوريغون." data-year="2012" data-rating="★★★★☆">
-            <img src="https://s01.babup.com/uploads/MV5BMTEzNDc3MDQ2NzNeQTJeQWpwZ15BbWU4MDYzMzUwMDIx-V1-FMjpg-UX1000-_b9fc4.jpg" alt="" class="movie-image">
-            <div class="movie-header">
-                <h2>  Gravity Falls </h2>
-                <div>
-                  
-                    <i class="fa fa-heart favorite"></i>
-                    <div 
-                        onclick="window.open('https://fanshome0.github.io/Gravity-Falls/', '_blank');"
-                        style="cursor: pointer; display: inline-block; text-decoration: none; color: inherit;"
-                    >
-                        <i class="fa fa-play watch" style="color: #ffd700;"></i>
-                    </div>
-                </div>
-            </div>
-               </div>
+             
             
  
                
@@ -658,39 +645,45 @@
 
 
 
+
 <div class="movie-section">
-    <h2 class="section-title">| كرتون رائج  </h2>
+    <h2 class="section-title">| قادم قريبا  </h2>
     <div class="movie-container">
 
            
-           
-                 <div class="movie-item" data-story="يتناول الفيلم حول فأر يستطيع الطبخ بشكل رائع يعقد تحالفًا غير عادي مع عامل مطبخ شاب في مطعم باريسي شهير" data-year="2007 " data-rating="★★★☆☆">
-            <img src="https://s01.babup.com/uploads/p-ratatouille-19736-0814231f-1-_a614a.jpeg" alt="" class="movie-image">
+        
+           <div class="movie-item" data-story=" تواجه (مافكا) -روح الغابة- خيارًا مستحيلًا بين الحب وواجبها في حماية قلب الغابة، عندما تقع (مافكا) في الحب مع الموسيقي (لوكاش)، وتتناول الأحداث القوة السحرية للحب، والتي تمكن الطبيعة البشرية من التغاضي عن الشر ومواجهته
+" data-year="2023" data-rating="★★★☆☆">
+     <img src="https://s01.babup.com/uploads/MV5BMTdlOGJjMDItOGUyOS00OWFiLTg2NmMtMmVlOGRkZGNmNDA2XkEyXkFqcGdeQXVyMzA0OTQzODE-V1-FMjpg-UX1000-.jpg" alt="" class="movie-image">
             <div class="movie-header">
-                <h2> Ratatouille </h2>
+                <h2> Mavka  </h2>
                 <div>
                   
                     <i class="fa fa-heart favorite"></i>
                     <div 
-                       onclick="window.open('https://fanshome0.github.io/Ratatouille/', '_blank');"
+                        onclick="window.open('#', '_blank');"
                         style="cursor: pointer; display: inline-block; text-decoration: none; color: inherit;"
                     >
                         <i class="fa fa-play watch" style="color: #ffd700;"></i>
                     </div>
                 </div>
             </div>
-               </div>
-           
-           
-                <div class="movie-item" data-story="في مغامرة مثيرة، يكتشف فتى صغير جهازًا غير عادي يتيح له التحول إلى كائنات متنوعة ذات قدرات فريدة. بمساعدة أفراد عائلته، يتنقل عبر تحديات ومهام معقدة، مستخدمًا قدراته لمواجهة التهديدات وإنقاذ العالم من المخاطر. كل حلقة تكشف عن جانب جديد من قدراته ومهامه، مما يجعله يخوض مغامرات مليئة بالإثارة والتشويق." data-year="2005" data-rating="★★★★☆">
-     <img src="https://m.media-amazon.com/images/M/MV5BZjg2ZjViMTktNWQ1Yy00ODZiLWE1OTgtNDY3MjI0OGUyNjNhXkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_.jpg" alt="" class="movie-image">
+           </div>
+        
+         
+        
+        
+        
+         <div class="movie-item" data-story=" في إطار موسيقي، عائلي، تدور الأحداث في عشية عيد الميلاد المفعم بالأجواء الباردة، حيث يصبح على البخيل إيبينيرز سكروج مواجهة ماضيه وتغيير مستقبله قبل فوات الأوان
+" data-year="2022" data-rating="★★★★☆">
+     <img src="https://s01.babup.com/uploads/MV5BNDJmMzc1NzItNDQzYi00Nzk3LTg2NWYtMGRkNTM4MWIyMmU5XkEyXkFqcGdeQXVyMTEzMTI1Mjk3-V1-FMjpg-UX1000-.jpg" alt="" class="movie-image">
             <div class="movie-header">
-                <h2> بن 10 كلاسيك </h2>
+                <h2> Christmas Carol </h2>
                 <div>
                   
                     <i class="fa fa-heart favorite"></i>
                     <div 
-                        onclick="window.open('https://tdrsvs.github.io/ben-10-classic-/', '_blank');"
+                        onclick="window.open('#', '_blank');"
                         style="cursor: pointer; display: inline-block; text-decoration: none; color: inherit;"
                     >
                         <i class="fa fa-play watch" style="color: #ffd700;"></i>
@@ -700,54 +693,8 @@
            </div>
         
            
-           
-           
-               
-                 <div class="movie-item" data-story="يواجه صبي ذو خيال نشط مخاوفه في رحلة لا تُنسى عبر الليل مع صديقه الجديد وهو مخلوق عملاق مبتسم يُدعى دارك" data-year="2024" data-rating="★★★☆☆">
-            <img src="https://s01.babup.com/uploads/Orion-and-the-Dark_87e09.jpg" alt="" class="movie-image">
-            <div class="movie-header">
-                <h2>  Orion and the Dark </h2>
-                <div>
-                  
-                    <i class="fa fa-heart favorite"></i>
-                    <div 
-                        onclick="window.open('https://tdrsvs.github.io/Orion-and-Dark/', '_blank');"
-                        style="cursor: pointer; display: inline-block; text-decoration: none; color: inherit;"
-                    >
-                        <i class="fa fa-play watch" style="color: #ffd700;"></i>
-                    </div>
-                </div>
-            </div>   </div>
-   
-   
-   
- 
-         
-   
-   
-   
-   
-    </div>
-</div>
-
-
-
-
-
-
-
-
-<div class="movie-section">
-    <h2 class="section-title">| قادم قريبا  </h2>
-    <div class="movie-container">
-
-           
-               
-          
-   
-   
-   
-      <div class="movie-item" data-story="في قلب مملكة آريندل المتجمدة، تمتلك إلسا القدرة على صنع الجليد والثلوج، لكنها تعاني من فقدان السيطرة على قواها. بعد أن تسببت عن غير قصد في فصل شتاء أبدي، تفر إلى قمة جبلية حيث تبني قصرها الجليدي. بينما تتناثر الأخبار، تسعى شقيقتها آنا لإعادتها إلى وطنهما، لكن الحب والتضحية هما مفتاح إنقاذ المملكة وإيقاف الشتاء الأبدي
+      
+            <div class="movie-item" data-story="في قلب مملكة آريندل المتجمدة، تمتلك إلسا القدرة على صنع الجليد والثلوج، لكنها تعاني من فقدان السيطرة على قواها. بعد أن تسببت عن غير قصد في فصل شتاء أبدي، تفر إلى قمة جبلية حيث تبني قصرها الجليدي. بينما تتناثر الأخبار، تسعى شقيقتها آنا لإعادتها إلى وطنهما، لكن الحب والتضحية هما مفتاح إنقاذ المملكة وإيقاف الشتاء الأبدي
 " data-year="2013" data-rating="★★★★☆">
      <img src="https://s01.babup.com/uploads/MV5BMTQ1MjQwMTE5OF5BMl5BanBnXkFtZTgwNjk3MTcyMDE-V1-FMjpg-UX1000-.jpg" alt="" class="movie-image">
             <div class="movie-header">
@@ -765,6 +712,70 @@
             </div>
            </div>
         
+           
+        
+        
+        
+        
+        
+               
+                  <div class="movie-item" data-story=" بينما يدمر كانو والتنين الأسود الخراب في جميع أنحاء العالم ، سيتعين على محارب شاب يُدعى كينشي أن يتخطى حدوده ويتحمل التهديد الذي يلوح في الأفق
+" data-year="2022" data-rating="★★★☆☆">
+     <img src="https://s01.babup.com/uploads/MV5BZTRlZWZiMWMtNjc5My00NDI0LTk0ZmQtOGE2M2FlY2EzNzcxXkEyXkFqcGdeQXVyMjU0OTAwMDc-V1-SX700-1.jpg" alt="" class="movie-image">
+            <div class="movie-header">
+                <h2> Mortal Kombat</h2>
+                <div>
+                  
+                    <i class="fa fa-heart favorite"></i>
+                    <div 
+                        onclick="window.open('#', '_blank');"
+                        style="cursor: pointer; display: inline-block; text-decoration: none; color: inherit;"
+                    >
+                        <i class="fa fa-play watch" style="color: #ffd700;"></i>
+                    </div>
+                </div>
+            </div>
+           </div>
+        
+         
+               
+               
+               
+               
+               
+               
+               
+               
+             <div class="movie-item" data-story=" يجتمع أربعة صغار من أشدّ المعجبين بكرة القدم لمساعدة نجمَيهما المحبوبَين على استعادة قدراتهما بعد أن يَسلب عالِم شرير ماكر مهاراتهما
+" data-year="2022" data-rating="★★★☆☆">
+     <img src="https://s01.babup.com/uploads/MV5BNTliOGM3ODktNDIxMC00NWY3LTg5NTAtZTFkMzhkMGNjNmRhXkEyXkFqcGdeQXVyMTA5ODEyNTc5-V1-.jpg" alt="" class="movie-image">
+            <div class="movie-header">
+                <h2> The Soccer Football </h2>
+                <div>
+                  
+                    <i class="fa fa-heart favorite"></i>
+                    <div 
+                        onclick="window.open('#', '_blank');"
+                        style="cursor: pointer; display: inline-block; text-decoration: none; color: inherit;"
+                    >
+                        <i class="fa fa-play watch" style="color: #ffd700;"></i>
+                    </div>
+                </div>
+            </div>
+           </div>
+        
+         
+          
+          
+          
+          
+   
+   
+   
+
+         
+         
+         
          
        <div class="movie-item" data-story="سونيك، القنفذ الأزرق السريع الذي يهرب من عالمه إلى الأرض ليختبئ من أعدائه. عندما يتم اكتشافه من قبل ضابط الشرطة المحلي، يكتشفان معاً أن  دكتور روبوتنيك الشرير يسعى لالتقاطه واستخدام قدراته السريعة لأغراضه الشريرة. يجب على سونيك وصديقه الجديد منع روبوتنيك وإنقاذ الأرض.
 " data-year="2020" data-rating="★★★☆☆">
